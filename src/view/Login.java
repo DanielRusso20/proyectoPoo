@@ -60,20 +60,19 @@ public class Login extends javax.swing.JFrame {
         panelDiseñoLayout.setHorizontalGroup(
             panelDiseñoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelDiseñoLayout.createSequentialGroup()
-                .addGap(22, 22, 22)
-                .addGroup(panelDiseñoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5))
-                .addContainerGap(28, Short.MAX_VALUE))
+                .addGap(20, 20, 20)
+                .addGroup(panelDiseñoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel5)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(30, Short.MAX_VALUE))
         );
         panelDiseñoLayout.setVerticalGroup(
             panelDiseñoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelDiseñoLayout.createSequentialGroup()
-                .addGap(84, 84, 84)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28)
-                .addComponent(jLabel5)
-                .addContainerGap(287, Short.MAX_VALUE))
+                .addGap(142, 142, 142)
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(197, Short.MAX_VALUE))
         );
 
         panelPrincipal.add(panelDiseño, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 290, 530));
@@ -143,14 +142,14 @@ public class Login extends javax.swing.JFrame {
         panelPrincipal.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 110, 210, 30));
 
         jLabel3.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
-        jLabel3.setText("CONTRASEÑA");
+        jLabel3.setText("Contraseña");
         panelPrincipal.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 300, -1, -1));
 
         jSeparator1.setForeground(new java.awt.Color(0, 0, 0));
         panelPrincipal.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 360, 570, 20));
 
         jLabel4.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
-        jLabel4.setText("USUARIO");
+        jLabel4.setText("Usuario");
         panelPrincipal.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 180, -1, -1));
 
         txtUsuario.setForeground(new java.awt.Color(153, 153, 153));

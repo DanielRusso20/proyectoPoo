@@ -28,7 +28,7 @@
     <Container class="javax.swing.JPanel" name="jPanel2">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="f8" green="b7" red="3e" type="rgb"/>
+          <Color blue="ff" green="cc" red="33" type="rgb"/>
         </Property>
       </Properties>
       <Constraints>
@@ -145,7 +145,7 @@
         <Container class="javax.swing.JPanel" name="BotonTransacciones">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="f8" green="b7" red="3e" type="rgb"/>
+              <Color blue="ff" green="cc" red="33" type="rgb"/>
             </Property>
           </Properties>
           <Events>
@@ -203,7 +203,7 @@
         <Container class="javax.swing.JPanel" name="BotonProductos">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="f8" green="b7" red="3e" type="rgb"/>
+              <Color blue="ff" green="cc" red="33" type="rgb"/>
             </Property>
           </Properties>
           <Events>
@@ -261,7 +261,7 @@
         <Container class="javax.swing.JPanel" name="BotonLaboratorios">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="f8" green="b7" red="3e" type="rgb"/>
+              <Color blue="ff" green="cc" red="33" type="rgb"/>
             </Property>
           </Properties>
           <Events>
@@ -319,7 +319,7 @@
         <Container class="javax.swing.JPanel" name="BotonUsuarios">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="f8" green="b7" red="3e" type="rgb"/>
+              <Color blue="ff" green="cc" red="33" type="rgb"/>
             </Property>
           </Properties>
           <Events>
@@ -375,7 +375,7 @@
         <Container class="javax.swing.JPanel" name="BotonInicio">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="f8" green="b7" red="3e" type="rgb"/>
+              <Color blue="ff" green="cc" red="33" type="rgb"/>
             </Property>
           </Properties>
           <Events>
@@ -440,7 +440,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="320" y="0" width="1050" height="100"/>
+          <AbsoluteConstraints x="320" y="0" width="1050" height="120"/>
         </Constraint>
       </Constraints>
 
@@ -470,7 +470,7 @@
                       <Component id="BotonCerrar" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
                       <Component id="BotonMinimizar" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="64" max="32767" attributes="0"/>
+                  <EmptySpace pref="84" max="32767" attributes="0"/>
               </Group>
               <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
@@ -531,7 +531,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="320" y="100" width="1050" height="670"/>
+          <AbsoluteConstraints x="320" y="60" width="1050" height="710"/>
         </Constraint>
       </Constraints>
 
@@ -559,7 +559,7 @@
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="635" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="675" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>

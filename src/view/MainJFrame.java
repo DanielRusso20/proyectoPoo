@@ -59,7 +59,7 @@ public class MainJFrame extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel2.setBackground(new java.awt.Color(62, 183, 248));
+        jPanel2.setBackground(new java.awt.Color(51, 204, 255));
 
         jPanel1.setBackground(new java.awt.Color(51, 204, 255));
 
@@ -99,7 +99,7 @@ public class MainJFrame extends javax.swing.JFrame {
                 .addContainerGap(24, Short.MAX_VALUE))
         );
 
-        BotonTransacciones.setBackground(new java.awt.Color(62, 183, 248));
+        BotonTransacciones.setBackground(new java.awt.Color(51, 204, 255));
         BotonTransacciones.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 BotonTransaccionesMouseMoved(evt);
@@ -141,7 +141,7 @@ public class MainJFrame extends javax.swing.JFrame {
                 .addContainerGap(21, Short.MAX_VALUE))
         );
 
-        BotonProductos.setBackground(new java.awt.Color(62, 183, 248));
+        BotonProductos.setBackground(new java.awt.Color(51, 204, 255));
         BotonProductos.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 BotonProductosMouseMoved(evt);
@@ -183,7 +183,7 @@ public class MainJFrame extends javax.swing.JFrame {
                 .addGap(20, 20, 20))
         );
 
-        BotonLaboratorios.setBackground(new java.awt.Color(62, 183, 248));
+        BotonLaboratorios.setBackground(new java.awt.Color(51, 204, 255));
         BotonLaboratorios.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 BotonLaboratoriosMouseMoved(evt);
@@ -225,7 +225,7 @@ public class MainJFrame extends javax.swing.JFrame {
                 .addContainerGap(17, Short.MAX_VALUE))
         );
 
-        BotonUsuarios.setBackground(new java.awt.Color(62, 183, 248));
+        BotonUsuarios.setBackground(new java.awt.Color(51, 204, 255));
         BotonUsuarios.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 BotonUsuariosMouseMoved(evt);
@@ -266,7 +266,7 @@ public class MainJFrame extends javax.swing.JFrame {
                 .addContainerGap(15, Short.MAX_VALUE))
         );
 
-        BotonInicio.setBackground(new java.awt.Color(62, 183, 248));
+        BotonInicio.setBackground(new java.awt.Color(51, 204, 255));
         BotonInicio.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 BotonInicioMouseMoved(evt);
@@ -384,7 +384,7 @@ public class MainJFrame extends javax.swing.JFrame {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BotonCerrar, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(BotonMinimizar, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(64, Short.MAX_VALUE))
+                .addContainerGap(84, Short.MAX_VALUE))
             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel3Layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -392,7 +392,7 @@ public class MainJFrame extends javax.swing.JFrame {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
-        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 0, 1050, 100));
+        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 0, 1050, 120));
         getContentPane().add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-100, -39, 100, 40));
 
         jTabbedPane2.setBackground(new java.awt.Color(255, 255, 255));
@@ -407,12 +407,12 @@ public class MainJFrame extends javax.swing.JFrame {
         );
         jPanel10Layout.setVerticalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 635, Short.MAX_VALUE)
+            .addGap(0, 675, Short.MAX_VALUE)
         );
 
         jTabbedPane2.addTab("tab1", jPanel10);
 
-        getContentPane().add(jTabbedPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 100, 1050, 670));
+        getContentPane().add(jTabbedPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 60, 1050, 710));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -463,7 +463,7 @@ public class MainJFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_BotonTransaccionesMouseMoved
 
     private void BotonMinimizarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotonMinimizarMouseClicked
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_BotonMinimizarMouseClicked
 
     private void BotonCerrarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotonCerrarMouseClicked
