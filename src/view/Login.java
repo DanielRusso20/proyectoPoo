@@ -31,6 +31,7 @@ public class Login extends javax.swing.JFrame {
         panelParaMover = new javax.swing.JPanel();
         panelExit = new javax.swing.JPanel();
         labelExit = new javax.swing.JLabel();
+        labelMinimizar = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
@@ -120,18 +121,30 @@ public class Login extends javax.swing.JFrame {
                 .addComponent(labelExit, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
+        labelMinimizar.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 36)); // NOI18N
+        labelMinimizar.setText("-");
+        labelMinimizar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                labelMinimizarMouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout panelParaMoverLayout = new javax.swing.GroupLayout(panelParaMover);
         panelParaMover.setLayout(panelParaMoverLayout);
         panelParaMoverLayout.setHorizontalGroup(
             panelParaMoverLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelParaMoverLayout.createSequentialGroup()
-                .addGap(0, 940, Short.MAX_VALUE)
+                .addGap(0, 922, Short.MAX_VALUE)
+                .addComponent(labelMinimizar)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(panelExit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         panelParaMoverLayout.setVerticalGroup(
             panelParaMoverLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelParaMoverLayout.createSequentialGroup()
-                .addComponent(panelExit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(panelParaMoverLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(panelExit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(labelMinimizar))
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
@@ -280,6 +293,10 @@ public class Login extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtUsuarioActionPerformed
 
+    private void labelMinimizarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelMinimizarMouseClicked
+        
+    }//GEN-LAST:event_labelMinimizarMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -326,6 +343,7 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JLabel labelEntrar;
     private javax.swing.JLabel labelExit;
+    private javax.swing.JLabel labelMinimizar;
     private javax.swing.JPanel panelDiseño;
     private javax.swing.JPanel panelExit;
     private javax.swing.JPanel panelParaMover;
