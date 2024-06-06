@@ -53,10 +53,20 @@ public class UsuariosJFrame extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
+        BotonModificarUsuario = new javax.swing.JPanel();
+        jLabel9 = new javax.swing.JLabel();
+        BotonCrearUsuario = new javax.swing.JPanel();
+        jLabel13 = new javax.swing.JLabel();
+        BotonListarUsarios = new javax.swing.JPanel();
+        jLabel15 = new javax.swing.JLabel();
+        BotonEliminarUsuario = new javax.swing.JPanel();
+        jLabel18 = new javax.swing.JLabel();
+        jPanel9 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
+        BotonUsuarioEsp = new javax.swing.JPanel();
+        jLabel20 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -78,14 +88,14 @@ public class UsuariosJFrame extends javax.swing.JFrame {
             }
         });
 
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Logo UCAB.png"))); // NOI18N
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Logo UCAB.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap(988, Short.MAX_VALUE)
+                .addContainerGap(1044, Short.MAX_VALUE)
                 .addComponent(BotonMinimizar, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
                 .addComponent(BotonCerrar)
@@ -379,7 +389,7 @@ public class UsuariosJFrame extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 58, Short.MAX_VALUE)
                 .addComponent(BotonInicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(20, 20, 20)
                 .addComponent(BotonLaboratorios, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -392,45 +402,252 @@ public class UsuariosJFrame extends javax.swing.JFrame {
                 .addGap(113, 113, 113))
         );
 
-        jLabel4.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
-        jLabel4.setText("Crear  Usuario");
+        jPanel4.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel8.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
-        jLabel8.setText("Eliminar Usuario");
+        BotonModificarUsuario.setBackground(new java.awt.Color(51, 204, 255));
+        BotonModificarUsuario.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                BotonModificarUsuarioMouseMoved(evt);
+            }
+        });
+        BotonModificarUsuario.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BotonModificarUsuarioMouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                BotonModificarUsuarioMouseExited(evt);
+            }
+        });
 
         jLabel9.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel9.setText("Modificar Usuario");
 
-        jLabel11.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
-        jLabel11.setText("Mostrar Usuario");
+        javax.swing.GroupLayout BotonModificarUsuarioLayout = new javax.swing.GroupLayout(BotonModificarUsuario);
+        BotonModificarUsuario.setLayout(BotonModificarUsuarioLayout);
+        BotonModificarUsuarioLayout.setHorizontalGroup(
+            BotonModificarUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(BotonModificarUsuarioLayout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addComponent(jLabel9)
+                .addContainerGap(15, Short.MAX_VALUE))
+        );
+        BotonModificarUsuarioLayout.setVerticalGroup(
+            BotonModificarUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BotonModificarUsuarioLayout.createSequentialGroup()
+                .addContainerGap(25, Short.MAX_VALUE)
+                .addComponent(jLabel9)
+                .addGap(25, 25, 25))
+        );
+
+        BotonCrearUsuario.setBackground(new java.awt.Color(51, 204, 255));
+        BotonCrearUsuario.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                BotonCrearUsuarioMouseMoved(evt);
+            }
+        });
+        BotonCrearUsuario.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BotonCrearUsuarioMouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                BotonCrearUsuarioMouseExited(evt);
+            }
+        });
+
+        jLabel13.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
+        jLabel13.setText("Crear Usuario");
+
+        javax.swing.GroupLayout BotonCrearUsuarioLayout = new javax.swing.GroupLayout(BotonCrearUsuario);
+        BotonCrearUsuario.setLayout(BotonCrearUsuarioLayout);
+        BotonCrearUsuarioLayout.setHorizontalGroup(
+            BotonCrearUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(BotonCrearUsuarioLayout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addComponent(jLabel13)
+                .addContainerGap(15, Short.MAX_VALUE))
+        );
+        BotonCrearUsuarioLayout.setVerticalGroup(
+            BotonCrearUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BotonCrearUsuarioLayout.createSequentialGroup()
+                .addContainerGap(25, Short.MAX_VALUE)
+                .addComponent(jLabel13)
+                .addGap(25, 25, 25))
+        );
+
+        BotonListarUsarios.setBackground(new java.awt.Color(51, 204, 255));
+        BotonListarUsarios.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                BotonListarUsariosMouseMoved(evt);
+            }
+        });
+        BotonListarUsarios.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BotonListarUsariosMouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                BotonListarUsariosMouseExited(evt);
+            }
+        });
+
+        jLabel15.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
+        jLabel15.setText("Listar Usuarios");
+
+        javax.swing.GroupLayout BotonListarUsariosLayout = new javax.swing.GroupLayout(BotonListarUsarios);
+        BotonListarUsarios.setLayout(BotonListarUsariosLayout);
+        BotonListarUsariosLayout.setHorizontalGroup(
+            BotonListarUsariosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(BotonListarUsariosLayout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addComponent(jLabel15)
+                .addContainerGap(15, Short.MAX_VALUE))
+        );
+        BotonListarUsariosLayout.setVerticalGroup(
+            BotonListarUsariosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BotonListarUsariosLayout.createSequentialGroup()
+                .addContainerGap(25, Short.MAX_VALUE)
+                .addComponent(jLabel15)
+                .addGap(25, 25, 25))
+        );
+
+        BotonEliminarUsuario.setBackground(new java.awt.Color(51, 204, 255));
+        BotonEliminarUsuario.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                BotonEliminarUsuarioMouseMoved(evt);
+            }
+        });
+        BotonEliminarUsuario.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BotonEliminarUsuarioMouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                BotonEliminarUsuarioMouseExited(evt);
+            }
+        });
+
+        jLabel18.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
+        jLabel18.setText("Eliminar Usuario");
+
+        javax.swing.GroupLayout BotonEliminarUsuarioLayout = new javax.swing.GroupLayout(BotonEliminarUsuario);
+        BotonEliminarUsuario.setLayout(BotonEliminarUsuarioLayout);
+        BotonEliminarUsuarioLayout.setHorizontalGroup(
+            BotonEliminarUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(BotonEliminarUsuarioLayout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addComponent(jLabel18)
+                .addContainerGap(15, Short.MAX_VALUE))
+        );
+        BotonEliminarUsuarioLayout.setVerticalGroup(
+            BotonEliminarUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BotonEliminarUsuarioLayout.createSequentialGroup()
+                .addContainerGap(25, Short.MAX_VALUE)
+                .addComponent(jLabel18)
+                .addGap(25, 25, 25))
+        );
+
+        jLabel4.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
+        jLabel4.setText("¡Bienvenido al apartado de Usuarios!");
+
+        jLabel8.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
+        jLabel8.setText("Seleccione alguna de las siguentes opciones :");
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Icono Usuario Usuario.png"))); // NOI18N
+
+        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
+        jPanel9.setLayout(jPanel9Layout);
+        jPanel9Layout.setHorizontalGroup(
+            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel9Layout.createSequentialGroup()
+                .addGap(248, 248, 248)
+                .addComponent(jLabel11)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel8)
+                    .addComponent(jLabel4))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel9Layout.setVerticalGroup(
+            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel9Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel11)
+                    .addGroup(jPanel9Layout.createSequentialGroup()
+                        .addComponent(jLabel4)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel8)))
+                .addContainerGap(20, Short.MAX_VALUE))
+        );
+
+        BotonUsuarioEsp.setBackground(new java.awt.Color(51, 204, 255));
+        BotonUsuarioEsp.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                BotonUsuarioEspMouseMoved(evt);
+            }
+        });
+        BotonUsuarioEsp.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BotonUsuarioEspMouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                BotonUsuarioEspMouseExited(evt);
+            }
+        });
+
+        jLabel20.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
+        jLabel20.setText("Listar Usuario Especifico");
+
+        javax.swing.GroupLayout BotonUsuarioEspLayout = new javax.swing.GroupLayout(BotonUsuarioEsp);
+        BotonUsuarioEsp.setLayout(BotonUsuarioEspLayout);
+        BotonUsuarioEspLayout.setHorizontalGroup(
+            BotonUsuarioEspLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(BotonUsuarioEspLayout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addComponent(jLabel20)
+                .addContainerGap(15, Short.MAX_VALUE))
+        );
+        BotonUsuarioEspLayout.setVerticalGroup(
+            BotonUsuarioEspLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BotonUsuarioEspLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel20)
+                .addGap(25, 25, 25))
+        );
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(341, 341, 341)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(35, 35, 35)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(239, 239, 239)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                        .addComponent(BotonCrearUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(35, 35, 35)
+                        .addComponent(BotonModificarUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(35, 35, 35)
+                        .addComponent(BotonEliminarUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGap(90, 90, 90)
+                        .addComponent(BotonListarUsarios, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(35, 35, 35)
+                        .addComponent(BotonUsuarioEsp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel9)
-                    .addComponent(jLabel11))
-                .addGap(25, 25, 25)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel8)
-                    .addComponent(jLabel4))
-                .addGap(274, 274, 274))
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(184, 184, 184)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(BotonModificarUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BotonCrearUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BotonEliminarUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(30, 30, 30)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(BotonUsuarioEsp, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(BotonListarUsarios, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -534,6 +751,76 @@ public class UsuariosJFrame extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_BotonCerrarMouseClicked
 
+    private void BotonCrearUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotonCrearUsuarioMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BotonCrearUsuarioMouseClicked
+
+    private void BotonCrearUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotonCrearUsuarioMouseMoved
+        Color miColor = new Color(36, 115, 242);
+        BotonCrearUsuario.setBackground(miColor);
+    }//GEN-LAST:event_BotonCrearUsuarioMouseMoved
+
+    private void BotonCrearUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotonCrearUsuarioMouseExited
+        Color miColor = new Color(51,204,255);
+        BotonCrearUsuario.setBackground(miColor);
+    }//GEN-LAST:event_BotonCrearUsuarioMouseExited
+
+    private void BotonModificarUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotonModificarUsuarioMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BotonModificarUsuarioMouseClicked
+
+    private void BotonModificarUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotonModificarUsuarioMouseMoved
+        Color miColor = new Color(36, 115, 242);
+        BotonModificarUsuario.setBackground(miColor);
+    }//GEN-LAST:event_BotonModificarUsuarioMouseMoved
+
+    private void BotonModificarUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotonModificarUsuarioMouseExited
+        Color miColor = new Color(51,204,255);
+        BotonModificarUsuario.setBackground(miColor);
+    }//GEN-LAST:event_BotonModificarUsuarioMouseExited
+
+    private void BotonEliminarUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotonEliminarUsuarioMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BotonEliminarUsuarioMouseClicked
+
+    private void BotonEliminarUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotonEliminarUsuarioMouseMoved
+        Color miColor = new Color(36, 115, 242);
+        BotonEliminarUsuario.setBackground(miColor);
+    }//GEN-LAST:event_BotonEliminarUsuarioMouseMoved
+
+    private void BotonEliminarUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotonEliminarUsuarioMouseExited
+        Color miColor = new Color(51,204,255);
+        BotonEliminarUsuario.setBackground(miColor);
+    }//GEN-LAST:event_BotonEliminarUsuarioMouseExited
+
+    private void BotonListarUsariosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotonListarUsariosMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BotonListarUsariosMouseClicked
+
+    private void BotonListarUsariosMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotonListarUsariosMouseMoved
+        Color miColor = new Color(36, 115, 242);
+        BotonListarUsarios.setBackground(miColor);
+    }//GEN-LAST:event_BotonListarUsariosMouseMoved
+
+    private void BotonListarUsariosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotonListarUsariosMouseExited
+        Color miColor = new Color(51,204,255);
+        BotonListarUsarios.setBackground(miColor);
+    }//GEN-LAST:event_BotonListarUsariosMouseExited
+
+    private void BotonUsuarioEspMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotonUsuarioEspMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BotonUsuarioEspMouseClicked
+
+    private void BotonUsuarioEspMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotonUsuarioEspMouseMoved
+        Color miColor = new Color(36, 115, 242);
+        BotonUsuarioEsp.setBackground(miColor);
+    }//GEN-LAST:event_BotonUsuarioEspMouseMoved
+
+    private void BotonUsuarioEspMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotonUsuarioEspMouseExited
+        Color miColor = new Color(51,204,255);
+        BotonUsuarioEsp.setBackground(miColor);
+    }//GEN-LAST:event_BotonUsuarioEspMouseExited
+
     /**
      * @param args the command line arguments
      */
@@ -561,7 +848,6 @@ public class UsuariosJFrame extends javax.swing.JFrame {
         }
         //</editor-fold>
         //</editor-fold>
-
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
@@ -572,21 +858,30 @@ public class UsuariosJFrame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel BotonCerrar;
+    private javax.swing.JPanel BotonCrearUsuario;
+    private javax.swing.JPanel BotonEliminarUsuario;
     private javax.swing.JPanel BotonInicio;
     private javax.swing.JPanel BotonLaboratorios;
+    private javax.swing.JPanel BotonListarUsarios;
     private javax.swing.JLabel BotonMinimizar;
+    private javax.swing.JPanel BotonModificarUsuario;
     private javax.swing.JPanel BotonProductos;
     private javax.swing.JPanel BotonTransacciones;
+    private javax.swing.JPanel BotonUsuarioEsp;
     private javax.swing.JPanel BotonUsuarios;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel3;
@@ -600,5 +895,6 @@ public class UsuariosJFrame extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel9;
     // End of variables declaration//GEN-END:variables
 }
